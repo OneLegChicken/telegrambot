@@ -1,0 +1,36 @@
+{
+  "name": "Receipt",
+  "type": "object",
+  "properties": {
+    "telegram_id": {
+      "type": "string",
+      "description": "\u0622\u06cc\u062f\u06cc \u0639\u062f\u062f\u06cc \u06a9\u0627\u0631\u0628\u0631"
+    },
+    "username": {
+      "type": "string",
+      "description": "\u06cc\u0648\u0632\u0631\u0646\u06cc\u0645 \u06a9\u0627\u0631\u0628\u0631"
+    },
+    "amount": {
+      "type": "number",
+      "description": "\u0645\u0628\u0644\u063a \u0648\u0627\u0631\u06cc\u0632\u06cc (\u062a\u0648\u0645\u0627\u0646)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "description": "\u0648\u0636\u0639\u06cc\u062a \u0631\u0633\u06cc\u062f"
+    },
+    "note": {
+      "type": "string",
+      "description": "\u06cc\u0627\u062f\u062f\u0627\u0634\u062a"
+    }
+  },
+  "required": [
+    "telegram_id",
+    "amount",
+    "status"
+  ]
+}

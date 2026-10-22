@@ -1,0 +1,25 @@
+{
+  "name": "Category",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "\u0646\u0627\u0645 \u062f\u0633\u062a\u0647\u200c\u0628\u0646\u062f\u06cc"
+    },
+    "icon": {
+      "type": "string",
+      "description": "\u0627\u06cc\u0645\u0648\u062c\u06cc"
+    },
+    "position": {
+      "type": "number",
+      "description": "\u062a\u0631\u062a\u06cc\u0628 \u0646\u0645\u0627\u06cc\u0634"
+    },
+    "active": {
+      "type": "boolean",
+      "description": "\u0641\u0639\u0627\u0644"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

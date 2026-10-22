@@ -1,0 +1,79 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "telegram_id": {
+      "type": "string",
+      "description": "\u0622\u06cc\u062f\u06cc \u0639\u062f\u062f\u06cc \u062e\u0631\u06cc\u062f\u0627\u0631"
+    },
+    "buyer_name": {
+      "type": "string",
+      "description": "\u0646\u0627\u0645 \u062e\u0631\u06cc\u062f\u0627\u0631"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "\u0634\u0646\u0627\u0633\u0647 \u0645\u062d\u0635\u0648\u0644"
+    },
+    "plan_id": {
+      "type": "string",
+      "description": "\u0634\u0646\u0627\u0633\u0647 \u067e\u0644\u0646"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "\u0646\u0627\u0645 \u0645\u062d\u0635\u0648\u0644"
+    },
+    "plan_title": {
+      "type": "string",
+      "description": "\u0639\u0646\u0648\u0627\u0646 \u067e\u0644\u0646"
+    },
+    "amount": {
+      "type": "number",
+      "description": "\u0645\u0628\u0644\u063a (\u062a\u0648\u0645\u0627\u0646)"
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "gateway",
+        "wallet"
+      ],
+      "description": "\u0631\u0648\u0634 \u067e\u0631\u062f\u0627\u062e\u062a"
+    },
+    "authority": {
+      "type": "string",
+      "description": "\u0634\u0646\u0627\u0633\u0647 \u062a\u0631\u0627\u06a9\u0646\u0634 \u062f\u0631\u06af\u0627\u0647 (Authority)"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "buy",
+        "extend"
+      ],
+      "description": "\u062e\u0631\u06cc\u062f \u06cc\u0627 \u062a\u0645\u062f\u06cc\u062f"
+    },
+    "service_id": {
+      "type": "string",
+      "description": "\u0633\u0631\u0648\u06cc\u0633 \u0645\u0631\u0628\u0648\u0637\u0647 (\u062a\u0645\u062f\u06cc\u062f)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "paid",
+        "delivered",
+        "cancelled",
+        "failed"
+      ],
+      "description": "\u0648\u0636\u0639\u06cc\u062a"
+    },
+    "delivery": {
+      "type": "string",
+      "description": "\u0645\u062a\u0646 \u062a\u062d\u0648\u06cc\u0644 (\u06a9\u0627\u0646\u0641\u06cc\u06af/\u06a9\u062f)"
+    }
+  },
+  "required": [
+    "telegram_id",
+    "product_id",
+    "amount",
+    "status"
+  ]
+}

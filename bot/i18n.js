@@ -1,0 +1,41 @@
+// Persian-first copy with an English option (settings: bot.language = fa | en).
+export const STRINGS = {
+  fa: {
+    welcome: "به فروشگاه ما خوش آمدید 👇",
+    choose: "👇 یکی از گزینه‌های زیر را انتخاب کنید",
+    pay_ok: "✅ پرداخت با موفقیت تایید شد!",
+    pay_fail: "❌ پرداخت تایید نشد. اگر مبلغی کسر شده باشد تا ۷۲ ساعت آینده بازمی‌گردد.",
+    wallet_empty: "❌ موجودی کیف پول شما کافی نیست. ابتدا از بخش «💰 کیف پول» آن را شارژ کنید.",
+    send_username: "✍️ لطفاً نام کاربری دلخواه خود را ارسال کنید (حروف انگلیسی، عدد و _):",
+    invalid_username: "نام کاربری فقط می‌تواند حروف انگلیسی، عدد و _ باشد. دوباره ارسال کنید:",
+    receipt_sent: "✅ رسید شما ثبت شد. پس از تایید مدیر، موجودی کیف پول شما شارژ می‌شود.",
+    support_intro: "🎧 پشتیبانی\n\nپیام خود را ارسال کنید؛ به‌زودی پاسخ می‌گیرید.\nبرای لغو /start را بزنید.",
+    support_sent: "✅ پیام شما به پشتیبانی ارسال شد.",
+    out_of_stock: "❌ متاسفانه موجودی این محصول تمام شده است.",
+    gateway_off: "❌ درگاه پرداخت آنلاین پیکربندی نشده است. از کیف پول استفاده کنید.",
+    cancel: "❌ لغو",
+    send_amount: "💲 مبلغ شارژ را به تومان ارسال کنید (یا یکی از گزینه‌ها را انتخاب کنید):",
+    send_receipt: "🏦 پس از واریز، تصویر یا متن رسید را همین‌جا ارسال کنید:",
+    invalid_amount: "عدد معتبر وارد کنید:",
+  },
+  en: {
+    welcome: "Welcome to our shop 👇",
+    choose: "👇 Choose one of the options below",
+    pay_ok: "✅ Payment confirmed!",
+    pay_fail: "❌ Payment was not confirmed.",
+    wallet_empty: "❌ Insufficient wallet balance. Top it up first.",
+    send_username: "✍️ Please send your preferred username (a-z, 0-9, _):",
+    invalid_username: "Invalid username. Try again:",
+    receipt_sent: "✅ Your receipt was submitted. Balance will be credited after admin approval.",
+    support_intro: "🎧 Support\n\nSend your message and you'll be answered soon.\nSend /start to cancel.",
+    support_sent: "✅ Your message was sent to support.",
+    out_of_stock: "❌ This product is out of stock.",
+    gateway_off: "❌ Online gateway is not configured. Use your wallet.",
+    cancel: "❌ Cancel",
+    send_amount: "💲 Send the top-up amount in Toman:",
+    send_receipt: "🏦 After the transfer, send a photo or text of the receipt here:",
+    invalid_amount: "Send a valid number:",
+  },
+};
+
+export const makeT = (lang = "fa") => (key) => (STRINGS[lang] && STRINGS[lang][key]) || STRINGS.fa[key] || key;

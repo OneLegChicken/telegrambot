@@ -1,0 +1,19 @@
+{
+  "name": "salesgram-bot",
+  "version": "1.0.0",
+  "description": "Salesgram — Persian-first Telegram sales bot for VPN subscriptions and digital products (3x-ui / Gurd v2 adapters)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "grammy": "^1.30.0",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "qrcode": "^1.5.4"
+  }
+}
